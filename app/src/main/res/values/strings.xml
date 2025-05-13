@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">deneme123</string>
+
+        <!-- Zaten varsa atlamanız yeterli -->
+        <string name="candidate_photo">Candidate photo</string>
+        <string name="view_profile">View Profile</string>
+        <string name="vote_now">Vote Now</string>
+        <string name="announcements_title">Announcements</string>
+
+</resources>

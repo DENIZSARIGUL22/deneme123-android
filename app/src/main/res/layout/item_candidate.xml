@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <!-- Aday Fotoğrafı (isteğe bağlı, url’den yükleyebilirsiniz) -->
+    <ImageView
+        android:id="@+id/imgCandidatePhoto"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:contentDescription="@drawable/ic_accountcircle"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Aday İsmi -->
+    <TextView
+        android:id="@+id/tvCandidateName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Candidate Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imgCandidatePhoto"
+        app:layout_constraintTop_toTopOf="@id/imgCandidatePhoto"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Bölüm / Yıl -->
+    <TextView
+        android:id="@+id/tvCandidateDept"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Department / Year"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/tvCandidateName"
+        app:layout_constraintTop_toBottomOf="@id/tvCandidateName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Kısa Biyografi -->
+    <TextView
+        android:id="@+id/tvCandidateBio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Short candidate bio or campaign promises go here..."
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgCandidatePhoto"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Butonlar: View Profile & Vote Now -->
+    <LinearLayout
+        android:id="@+id/llActions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCandidateBio">
+
+        <Button
+            android:id="@+id/btnViewProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/view_profile"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnVote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/vote_now"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

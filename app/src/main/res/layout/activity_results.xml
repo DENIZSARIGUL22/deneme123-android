@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.results.ResultsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvResultsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Election Results"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvCandidateName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidate 1: 0 oy" />
+
+        <TextView
+            android:id="@+id/tvCandidateName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidate 2: 0 oy"
+            android:layout_marginTop="8dp"/>
+
+        <!-- 3. aday için eklenen TextView -->
+        <TextView
+            android:id="@+id/tvCandidateName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidate 3: 0 oy"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnRefreshResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh Results"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@android:color/black"/>
+    </LinearLayout>
+</ScrollView>
