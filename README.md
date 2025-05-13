@@ -61,8 +61,8 @@ cd deneme123-android
 # 3. Run on emulator or device
 📂 Project Structure
 bash
-Kopyala
-Düzenle
+
+
 deneme123-android/
 ├── app/                   
 │   ├── src/
@@ -90,27 +90,24 @@ Settings → update profile or logout.
 Fork this repo & create a branch:
 
 bash
-Kopyala
-Düzenle
+
+
 git checkout -b feat/YourFeature
 Make changes & commit:
 
 bash
-Kopyala
-Düzenle
+
 git commit -m "Add awesome feature"
 Push & open PR:
 
 bash
-Kopyala
-Düzenle
+
 git push origin feat/YourFeature
 📜 License
 This project is licensed under the MIT License.
 
 yaml
-Kopyala
-Düzenle
+
 
 ---
 
@@ -206,8 +203,7 @@ POST	/feedback	–	Submit a feedback message
 Fork & clone:
 
 bash
-Kopyala
-Düzenle
+
 git checkout -b feat/YourFeature
 Implement & test your feature.
 
@@ -216,8 +212,6 @@ Commit & push, then open a Pull Request.
 📜 License
 This project is licensed under the MIT License.
 
-Kopyala
-Düzenle
 
 
 
